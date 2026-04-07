@@ -1,25 +1,36 @@
 # RFID-Controlled Smart Washing Machine
 
-<!-- Layout -->
 ## Machine Layout
 <p align="center">
   <img src="images_layout.png" width="400">
 </p>
 
-<!-- Wiring -->
 ## Wiring Diagram
 <p align="center">
-  <img src="image_wiring.png" width="400">
+  <img src="images_wiring.png" width="400">
 </p>
 
-<!-- Setup -->
 ## Prototype Setup
 <p align="center">
-  <img src="images_setups.png" width="400">
+  <img src="images_setup.png" width="400">
 </p>
 
 ## Abstract
 This project is a fully functional Arduino-based smart washing machine prototype. It integrates motion detection, RFID authentication, user-set wash/spin times, motor control, and real-time temperature monitoring.
+
+## Extended Description
+The aim of this project was to build a functional smart washing machine system incorporating multiple aspects of Mechatronics System Integration. Traditional washing machines simply wash clothes, but modern ones include features such as automatic drying, selectable water levels, temperature control, and even cashless operation in public machines. 
+
+This prototype replicates several of these functionalities:
+- Motion detection to greet users as they approach
+- RFID authentication for secure access
+- User-selectable wash and spin durations via push buttons
+- Real-time temperature display using DHT11 sensor
+- Automated wash and spin cycles controlled via relays
+- Servo-controlled door lock to enhance safety
+- Buzzer alerts to notify cycle completion
+
+The system was implemented on an Arduino Uno with multiple sensors and actuators working in harmony. The project demonstrates how embedded systems, sensor integration, and actuator control can combine to create a functional and interactive home appliance prototype.
 
 ## Features
 - Motion detection with IR sensor to greet users
@@ -62,23 +73,7 @@ Arduino IDE compatible. Full code included in this repo.
 #include <Servo.h>
 #include <DHT.h>
 
-// [Truncated: full code available in repo]
-
-```markdown
-## Results & Discussion
-- RFID authenticated users successfully
-- LCD guided cycle selection
-- Motors, relays, and servo worked as intended
-- DHT11 provided temperature feedback
-- Buzzer and door lock improved user experience
-
-## Conclusion
-The smart washing machine prototype was successfully implemented with all objectives met: secure authentication, user-configurable cycles, interactive feedback, and coordinated motor/servo operation.
-
-## Recommendations
-- Add music player or video display
-- Advanced water level control
-- Remote control via smartphone
+// [Truncated: full code in repo]
 
 ## References
 - MFRC522 RFID with Arduino: https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/
